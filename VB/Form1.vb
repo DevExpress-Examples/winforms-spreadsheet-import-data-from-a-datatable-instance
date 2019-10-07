@@ -24,9 +24,9 @@ Namespace SpreadsheetImportDataTable
 		Private Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles button1.Click
 			' Import DataTable according to the selected cell
 			Dim activeWorksheet As Worksheet = workbook.Worksheets.ActiveWorksheet
-			Dim selection As Range = activeWorksheet.SelectedCell
+            Dim selection As CellRange = activeWorksheet.SelectedCell
 
-			spreadsheetControl1.BeginUpdate()
+            spreadsheetControl1.BeginUpdate()
 			activeWorksheet.Import(ManualDataSet.CreateData().Tables(0), True, selection.TopRowIndex, selection.LeftColumnIndex)
 			spreadsheetControl1.EndUpdate()
 		End Sub
