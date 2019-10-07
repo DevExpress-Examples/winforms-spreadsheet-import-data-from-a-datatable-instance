@@ -21,7 +21,7 @@ namespace SpreadsheetImportDataTable {
         private void button1_Click(object sender, EventArgs e) {
             // Import DataTable according to the selected cell
             Worksheet activeWorksheet = workbook.Worksheets.ActiveWorksheet;
-            Range selection = activeWorksheet.SelectedCell;
+            CellRange selection = activeWorksheet.SelectedCell;
 
             spreadsheetControl1.BeginUpdate();
             activeWorksheet.Import(ManualDataSet.CreateData().Tables[0], true, selection.TopRowIndex, selection.LeftColumnIndex);
