@@ -3,17 +3,20 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E4776)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
+
+# Spreadsheet for WinForms - How to Import Data from a DataTable Instance
+
+This example illustrates how to import data from the [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) instance into a [SpreadsheetControl](https://docs.devexpress.com/WindowsForms/DevExpress.XtraSpreadsheet.SpreadsheetControl). We use the [WorksheetExtensions.Import](https://docs.devexpress.com/OfficeFileAPI/DevExpress.Spreadsheet.WorksheetExtensions.Import.overloads) overloaded method from the [WorksheetExtensions](https://docs.devexpress.com/OfficeFileAPI/DevExpress.Spreadsheet.WorksheetExtensions) class located in the `DevExpress.Docs.dll` assembly. In addition, use the `WorksheetCollection.ActiveWorksheet` and `Worksheet.SelectedCell` properties to place the data relative to the selection in the SpreadsheetControl.
+
+## Files to Review
 
 * [Form1.cs](./CS/Form1.cs) (VB: [Form1.vb](./VB/Form1.vb))
 * [ManualDataSet.cs](./CS/ManualDataSet.cs) (VB: [ManualDataSet.vb](./VB/ManualDataSet.vb))
-<!-- default file list end -->
-# How to import data from a DataTable instance into a SpreadsheetControl
 
+## More Examples
 
-<p>This example illustrates how to import data from the <a href="http://msdn.microsoft.com/en-us/library/system.data.datatable.aspx">DataTable Class</a> instance into a <a href="http://documentation.devexpress.com/#WindowsForms/clsDevExpressXtraSpreadsheetSpreadsheetControltopic">SpreadsheetControl</a>. We use the <strong>Worksheet.Import()</strong> overloaded method from the <strong>DevExpress.Spreadsheet.WorksheetExtensions</strong> class located in the <strong>DevExpress.Docs.vXY.Z.dll</strong> assembly. In addition, use the <strong>WorksheetCollection.ActiveWorksheet</strong> and <strong>Worksheet.SelectedCell</strong> properties to place the data relative to the selection in the SpreadsheetControl.</p><p></p><p><strong>See Also:</strong></p><p><a href="https://www.devexpress.com/Support/Center/p/E4751">How to import data to worksheet cells from different data sources and use tables</a></p>
+* [How to import data to worksheet cells from different data sources](https://github.com/DevExpress-Examples/how-to-import-data-from-different-data-sources-and-use-tables)
 
-<br/>
+## Documentation
 
-
+* [Data Binding](https://docs.devexpress.com/WindowsForms/117679/controls-and-libraries/spreadsheet/data-binding)
